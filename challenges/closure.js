@@ -27,26 +27,12 @@ When code inside nestedFunction looks for internal variable, it first searches w
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-
-
-const counter = [];
-  for (let i = 0; i < count; i++) {
-      counter.push(start + i);
-  }
-  return counter
+//create summation function that takes in a number, loops through and produces an array of numbers, and returns the sum of these numbers up to num value param.
+function summation(num){
+  let counter = 0;
+  for (let i = 0; i <= num; i++) {
+      counter += i;
+  }  return counter
 }
-
-
-
-
-function summation(counter){const counter = [];
-  for (let i = 0; i < count; i++) {
-      counter.push(start + i);
-  }  return counter.reduce(function (accumulator, item){
-  },0);
-}
-
-
-
 
 console.log(summation(4));
