@@ -6,7 +6,7 @@
 
 /* == Step 1: Base Constructor == */
   
-class CuboidMaker{
+class CuboidMaker2{
     constructor(attributes){
         this.length = attributes.length;
         this.width = attributes.width;
@@ -34,7 +34,7 @@ class CuboidMaker{
 
   /* == Step 4: Create a new object that uses CuboidMaker ==  */
   
-  const cuboid = new CuboidMaker({
+  const cuboid2 = new CuboidMaker({
     length: 4,
     width: 5,
     height: 5,
@@ -42,14 +42,14 @@ class CuboidMaker{
    
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-console.log(cuboid.volume()); // 100
-console.log(cuboid.surfaceArea()); // 130
+console.log(cuboid2.volume()); // 100
+console.log(cuboid2.surfaceArea()); // 130
 
 // Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area.
 
 
 // Initializing constructor and methods for CubeMaker inheriting from CuboidMaker
-class CubeMaker extends CuboidMaker{
+class CubeMaker extends CuboidMaker2{
     constructor(attributes){
       super(attributes)
     }
@@ -72,4 +72,4 @@ const cubicle = new CubeMaker ({
 console.log(cubicle.cubeVolume()); // should equal 125
 console.log(cubicle.cubeSurfaceArea()); // should equal 150
 
-console.log(cubical.volume()); // checking to see if CubeMaker also inherited methods from CuboidMaker - should equal 125
+console.log(cubicle.volume()); // checking to see if CubeMaker also inherited methods from CuboidMaker - should equal 125
