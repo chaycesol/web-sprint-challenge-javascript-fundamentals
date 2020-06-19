@@ -47,6 +47,8 @@ console.log(cuboid.surfaceArea()); // 130
 
 // Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area.
 
+
+// Initializing constructor and methods for CubeMaker inheriting from CuboidMaker
 class CubeMaker extends CuboidMaker{
     constructor(attributes){
       super(attributes)
@@ -59,12 +61,14 @@ class CubeMaker extends CuboidMaker{
     };
 }
 
+// creating new CubeMaker object
 const cubicle = new CubeMaker ({
     length: 5,
     height: 5,
     width: 5,
 });
   
+// return statements testing out logic for CubeMaker methods and if it inherited attribs from Parent CuboidMaker
 console.log(cubicle.cubeVolume()); // should equal 125
 console.log(cubicle.cubeSurfaceArea()); // should equal 150
 
